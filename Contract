@@ -1,0 +1,31 @@
+pub contract StudRegistration {
+
+    pub var students: {Address: Student}
+    
+    pub struct Student {
+        pub let firstName: String
+        pub let lastName: String
+        pub let registration_no: String
+        pub let semester: String
+        pub let account: Address
+
+        // You have to pass in 4 arguments when creating this Struct.
+        init(_firstName: String, _lastName: String, _registration_no: String,_semester:String, _account: Address) {
+            self.firstName = _firstName
+            self.lastName = _lastName
+            self.registration_no = _registration_no
+            self.semester = _semester
+            self.account = _account
+        }
+    }
+
+    pub fun addStudent(firstName: String, lastName: String,registration_no: String,semester:String, account: Address) {
+        let newStudent = Student(_firstName: firstName, _lastName: lastName, _registration_no:registration_no,_semester:semester,_account: account)
+        self.students[account] = newStudent
+    }
+
+    init() {
+        self.students = {}
+    }
+
+}
