@@ -1,0 +1,5 @@
+import StudRegistration from 0x01
+
+pub fun main(account: Address): StudRegistration.Student {
+    return StudRegistration.students[account]!
+}
