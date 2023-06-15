@@ -1,0 +1,11 @@
+import StudRegistration from 0x01
+
+transaction(firstName: String, lastName: String,registration_no: String,semester:String, account: Address) {
+
+    prepare(signer: AuthAccount) {}
+
+    execute {
+       StudRegistration.addStudent(firstName: firstName, lastName: lastName, registration_no:registration_no,semester:semester,account: account)
+        log("Completed")
+    }
+}
