@@ -51,11 +51,13 @@ pub fun addStudent(firstName: String, lastName: String,registration_no: String,s
         self.students[account] = newStudent
     }
 
-    init() {
-        self.students = {}
-    }
+   
 The contract's init function is the constructor that initializes the students mapping as an empty mapping. It is called when the contract is deployed.
-
+ init() 
+ {
+        self.students = {}
+ }
+    
 
 # authors
 ISHIKA ANASANE
