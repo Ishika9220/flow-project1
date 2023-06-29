@@ -4,7 +4,6 @@ This is a simple contract which allows you to register students by providing the
 # Program Execution
 In this project I have created a smart contract named StudentRegistration and deployed it.In that I created a dictionary name students that maps an address type to student type.This mapping will store the information of each student registered in the contract.
 
-
     pub var students: {Address: Student}
 
 
@@ -53,10 +52,10 @@ pub fun addStudent(firstName: String, lastName: String,registration_no: String,s
 
    
 The contract's init function is the constructor that initializes the students mapping as an empty mapping. It is called when the contract is deployed.
- init() 
- {
-        self.students = {}
- }
+     init() 
+     {
+            self.students = {}
+     }
     
 
 # authors
