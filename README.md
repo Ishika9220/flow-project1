@@ -50,12 +50,14 @@ Inside the addStudent function, a new Student object is created using the provid
         self.students[account] = newStudent
     }
 
-  
-The contract's init function is the constructor that initializes the students mapping as an empty mapping. It is called when the contract is deployed.
     init() 
      {
             self.students = {}
      }  
+
+  
+The contract's init function is the constructor that initializes the students mapping as an empty mapping. It is called when the contract is deployed.
+    
     
 
 # authors
