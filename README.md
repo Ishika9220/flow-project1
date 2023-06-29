@@ -11,6 +11,7 @@ Inside the contract, I created a struct called Student that represents the detai
 
 firstName: A string representing the first name of the student.
 lastName: A string representing the last name of the student.
+
 registration_no: A string representing the registration number of the student.
 semester: A string representing the current semester of the student.
 account: An Address representing the address associated with the student.
