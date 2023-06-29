@@ -45,7 +45,8 @@ account: An Address representing the address associated with the student to be a
 Inside the addStudent function, a new Student object is created using the provided arguments. The Student struct's initializer is called with the arguments, and the resulting object is assigned to the newStudent variable. Then, this new student object is added to the students mapping, using the student's address (account) as the key.
 
 
-pub fun addStudent(firstName: String, lastName: String,registration_no: String,semester:String, account: Address) {
+pub fun addStudent(firstName: String, lastName: String,registration_no: String,semester:String, account: Address)
+    {
         let newStudent = Student(_firstName: firstName, _lastName: lastName, _registration_no:registration_no,_semester:semester,_account: account)
         self.students[account] = newStudent
     }
