@@ -41,7 +41,7 @@ lastName: A string representing the last name of the student to be added.
 registration_no: A string representing the registration number of the student to be added.
 semester: A string representing the current semester of the student to be added.
 account: An Address representing the address associated with the student to be added.
-Inside the addStudent function, a new Student object is created using the provided arguments. The Student struct's initializer is called with the arguments, and the resulting object is assigned to the newStudent variable. Then, this new student object is added to the students mapping, using the student's address (account) as the key.
+Inside the addStudent function, a new Student object is created using the provided arguments. The Student struct's initializer is called with the arguments , and the resulting object is assigned to the newStudent variable. Then, this new student object is added to the students mapping, using the student's address (account) as the key.
 
 
     pub fun addStudent(firstName: String, lastName: String,registration_no: String,semester:String, account: Address)
