@@ -10,11 +10,15 @@ In this project I have created a smart contract named StudentRegistration and de
 Inside the contract, I created a struct called Student that represents the details of a student. It has the following properties:
 
 firstName: A string representing the first name of the student.
+
 lastName: A string representing the last name of the student.
 
 registration_no: A string representing the registration number of the student.
+
 semester: A string representing the current semester of the student.
+
 account: An Address representing the address associated with the student.
+
 The Student struct also has an initializer (init function) that takes in the aforementioned properties as arguments and initializes the struct.
 
  pub struct Student {
@@ -38,10 +42,15 @@ The Student struct also has an initializer (init function) that takes in the afo
     The contract includes a public function named addStudent. This function allows you to add a new student to the students mapping. It takes the following arguments:
 
 firstName: A string representing the first name of the student to be added.
+
 lastName: A string representing the last name of the student to be added.
+
 registration_no: A string representing the registration number of the student to be added.
+
 semester: A string representing the current semester of the student to be added.
+
 account: An Address representing the address associated with the student to be added.
+
 Inside the addStudent function, a new Student object is created using the provided arguments. The Student struct's initializer is called with the arguments , and the resulting object is assigned to the newStudent variable. Then, this new student object is added to the students mapping, using the student's address (account) as the key.
 
 
